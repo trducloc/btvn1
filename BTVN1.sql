@@ -46,6 +46,8 @@ SELECT * FROM sakila.Person;
 
 /*6. Cập nhật tên của người có id là 10 thành “John Doe”.*/
 
+SET SQL_SAFE_UPDATES = 0;
+
 UPDATE Person
 SET fullname = 'John Doe'
 WHERE id = 10;
